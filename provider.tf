@@ -9,7 +9,7 @@ terraform {
 
 provider "google" {
   credentials = file("terraform_credentails.json")
-  project     = var.project_id
+  project     = var.project
   region      = "us-central1"
   zone        = "us-central1-a"
 }
