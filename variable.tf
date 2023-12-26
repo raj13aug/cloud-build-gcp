@@ -9,7 +9,7 @@ variable "project" {
 }
 
 variable "location" {
-  description = "The location (region or zone) to deploy the Cloud Run services. Note: Be sure to pick a region that supports Cloud Run."
+  description = "The location (region or zone)"
   type        = string
 }
 
