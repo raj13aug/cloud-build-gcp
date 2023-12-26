@@ -26,6 +26,9 @@ resource "google_project_service" "enabled_service" {
 
 resource "google_sourcerepo_repository" "repo" {
   name = var.repository_name
+  depends_on = [
+    google_project_service.enabled_service["sourcerepo.googleapis.com"]
+  ]
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
